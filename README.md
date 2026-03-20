@@ -1,23 +1,22 @@
 # Android Sentiment Analysis App
 
-Đây là một ứng dụng Android đơn giản sử dụng **Google Gemini API** (Mô hình `gemini-2.5-flash`) để phân tích cảm xúc của một đoạn văn bản (Tích cực - POSITIVE, Tiêu cực - NEGATIVE, hoặc Bình thường - NEUTRAL).
+This is a simple Android application using the **Google Gemini API** (model `gemini-2.5-flash`) to analyze the sentiment of a piece of text (Positive, Negative, or Neutral).
 
-## 🚀 Hướng dẫn cài đặt và sử dụng API Key
+## 🚀 Instructions for installing and using API Keys
 
-Để ứng dụng này có thể hoạt động, bạn cần tạo một API Key từ Google và bổ sung vào mã nguồn. Hãy làm theo các bước dưới đây:
+For security reasons, personal API keys are not uploaded to the shared source code (GitHub). To run the application after cloning it, please set your own API key by:
 
-### Bước 1: Lấy Gemini API Key
-1. Truy cập vào trang [Google AI Studio](https://aistudio.google.com/app/apikey).
-2. Đăng nhập bằng tài khoản Google của bạn.
-3. Nhấn vào nút **Create API Key**.
-4. (Tùy chọn) Chọn một project hoặc tạo project mới, sau đó ấn "Create API key in existing project".
-5. Copy đoạn mã được sinh ra (Nó trông giống thế này: `AIzaSy...`).
+### Step 1: Lấy Gemini API Key
+1. Access website [Google AI Studio](https://aistudio.google.com/app/apikey).
+2. Sign in with your Google account.
+3. Click the button **Create API Key**.
+4. Choose an existing Project (or create a new Project) and then copy the token code (starting with `AIzaSy...`).
 
-### Bước 2: Thêm API Key vào Android Studio
-Mở file mã nguồn `MainActivity.java` theo đường dẫn sau:
+### Step 2: Integrate the Key into the project.
+Open the source code file `MainActivity.java` follow this:
 `app/src/main/java/com/example/lab01_hw_23520347/MainActivity.java`
 
-Tìm đến **dòng số 40**, thay thế giá trị `"YOUR_GEMINI_API_KEY"` bằng API key bạn vừa copy ở Bước 1.
+Find **line 40** and replace the value `"YOUR_GEMINI_API_KEY"` with the API key you copied in Step 1.
 
 ```java
 // Thay YOUR_GEMINI_API_KEY bằng API Key thật của bạn
@@ -25,9 +24,9 @@ private static final String GEMINI_API_KEY = "YOUR_GEMINI_API_KEY";
 ```
 
 ### Bước 3: Chạy ứng dụng
-- Lưu lại file, kết nối máy ảo (Emulator) hoặc điện thoại Android và nhấn nút **Run** (▶️) để khởi chạy ứng dụng.
-- Bạn có thể gõ văn bản và nhấn **Submit** hoặc nhấn phím **Enter** trên bàn phím ảo để phân tích.
+- Save the file, connect to the emulator or your Android phone, and press the **Run** (▶️) button to launch the application.
+- You can type text and press **Submit** or press the **Enter** key on the virtual keyboard for analysis.
 
 ---
-
-*Lưu ý: Không bao giờ đẩy (commit) API Key thật của bạn lên GitHub một cách công khai để tránh bị lạm dụng hạn mức.*
+### Fast prompt you can use instead of step 2
+Open the `MainActivity.java` file and change the string `YOUR_GEMINI_API_KEY` to this API Key: `[PASTE THE API COPIED IN STEP 1 HERE]`
