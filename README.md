@@ -6,7 +6,7 @@ This is a simple Android application using the **Google Gemini API** (model `gem
 
 For security reasons, personal API keys are not uploaded to the shared source code (GitHub). To run the application after cloning it, please set your own API key by:
 
-### Step 1: Lấy Gemini API Key
+### Step 1: Get Gemini API Key
 1. Access website [Google AI Studio](https://aistudio.google.com/app/apikey).
 2. Sign in with your Google account.
 3. Click the button **Create API Key**.
@@ -23,7 +23,7 @@ Find **line 40** and replace the value `"YOUR_GEMINI_API_KEY"` with the API key 
 private static final String GEMINI_API_KEY = "YOUR_GEMINI_API_KEY";
 ```
 
-### Bước 3: Chạy ứng dụng
+### Bước 3: Run The Application
 - Save the file, connect to the emulator or your Android phone, and press the **Run** (▶️) button to launch the application.
 - You can type text and press **Submit** or press the **Enter** key on the virtual keyboard for analysis.
 
